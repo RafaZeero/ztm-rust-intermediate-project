@@ -23,10 +23,12 @@ fn main() {
         balance: 50000,
         verified: true,
     };
-    let my_account2 = BankAccount {
-        balance: 50000,
-        verified: false,
-    };
+
+    // this variable will test the panic codition on Rust
+    // let my_account2 = BankAccount {
+    //     balance: 50000,
+    //     verified: false,
+    // };
 
     let verification_status = is_verified(&my_account).unwrap();
 
